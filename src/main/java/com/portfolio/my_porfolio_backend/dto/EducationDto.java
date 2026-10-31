@@ -2,6 +2,8 @@ package com.portfolio.my_porfolio_backend.dto;
 
 import java.time.LocalDate;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.PastOrPresent;
@@ -28,9 +30,11 @@ public class EducationDto {
 
     @NotNull(message = "Field start_date not null")
     @PastOrPresent(message = "Field start_date must be an instant")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate startDate;
 
     @PastOrPresent(message = "Field end_date must be an instant")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate endDate;
 
     @NotBlank(message = "Field description not blank")
