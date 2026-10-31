@@ -36,5 +36,9 @@ build/
 .gradle
 build/
 
-### GitIgnore ###
+### Other ###
 .gitignore
+.DS_Store
+mvnw
+mvnw.cmd
+makefile
