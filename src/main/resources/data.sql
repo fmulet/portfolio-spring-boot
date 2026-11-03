@@ -21,3 +21,5 @@ INSERT INTO experiences (job_title, company_name, start_date, end_date, descript
 INSERT INTO projects (title, description, image_url, project_url, personal_info_id) VALUES
 ('Proyecto Integrador', 'Desarrollo de una aplicación web para gestión de tareas.', 'https://example.com/project1.jpg', 'https://example.com/project1', 1),
 ('Aplicación de E-commerce', 'Creación de una plataforma de compras en línea.', 'https://example.com/project2.jpg', 'https://example.com/project2', 1);
+
+INSERT INTO users (username, password, enabled) VALUES ('admin', '$2a$12$HCNrvBU65CzmaOBJO18JWe5Cion76Pq/Ajp1uk6PsU2AO3FhWJPHW', true);

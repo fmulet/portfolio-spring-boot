@@ -3,6 +3,7 @@ DROP TABLE IF EXISTS educations;
 DROP TABLE IF EXISTS skills;
 DROP TABLE IF EXISTS projects;
 DROP TABLE IF EXISTS personal_info;
+DROP TABLE IF EXISTS users;
 
 CREATE TABLE personal_info (
     id SERIAL PRIMARY KEY,
@@ -67,4 +68,11 @@ CREATE TABLE projects (
     personal_info_id INT,
     CONSTRAINT fk_project_personal_info
     FOREIGN KEY (personal_info_id) REFERENCES personal_info(id)
+);
+
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    enabled BOOLEAN NOT NULL
 );

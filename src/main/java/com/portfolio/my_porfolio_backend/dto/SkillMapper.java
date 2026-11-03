@@ -28,11 +28,10 @@ public class SkillMapper {
         Skill skill = new Skill();
 
         skill.setId(skillDto.getId());
-        skillDto.setId(skill.getId());
-        skillDto.setName(skill.getName());
-        skillDto.setIconClass(skill.getIconClass());
-        skillDto.setLevelPercentage(skill.getLevelPercentage());
-        skillDto.setPersonalInfoId(skill.getPersonalInfoId());
+        skill.setName(skillDto.getName());
+        skill.setIconClass(skillDto.getIconClass());
+        skill.setLevelPercentage(skillDto.getLevelPercentage());
+        skill.setPersonalInfoId(skillDto.getPersonalInfoId());
         return skill;
     }
 }

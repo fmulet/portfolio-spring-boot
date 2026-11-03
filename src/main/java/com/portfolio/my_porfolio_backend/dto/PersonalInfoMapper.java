@@ -14,16 +14,16 @@ public class PersonalInfoMapper {
         PersonalInfoDto personalInfoDto = new PersonalInfoDto();
 
         personalInfoDto.setId(personalInfo.getId());
-        personalInfo.setFirstName(personalInfo.getFirstName());
-        personalInfo.setLastName(personalInfo.getLastName());
-        personalInfo.setTitle(personalInfo.getTitle());
-        personalInfo.setProfileDescription(personalInfo.getProfileDescription());
-        personalInfo.setProfileImageUrl(personalInfo.getProfileImageUrl());
-        personalInfo.setYearsOfExperience(personalInfo.getYearsOfExperience());
-        personalInfo.setPhone(personalInfo.getPhone());
-        personalInfo.setEmail(personalInfo.getEmail());
-        personalInfo.setGithubUrl(personalInfo.getGithubUrl());
-        personalInfo.setLinkedinUrl(personalInfo.getLinkedinUrl());
+        personalInfoDto.setFirstName(personalInfo.getFirstName());
+        personalInfoDto.setLastName(personalInfo.getLastName());
+        personalInfoDto.setTitle(personalInfo.getTitle());
+        personalInfoDto.setProfileDescription(personalInfo.getProfileDescription());
+        personalInfoDto.setProfileImageUrl(personalInfo.getProfileImageUrl());
+        personalInfoDto.setYearsOfExperience(personalInfo.getYearsOfExperience());
+        personalInfoDto.setPhone(personalInfo.getPhone());
+        personalInfoDto.setEmail(personalInfo.getEmail());
+        personalInfoDto.setGithubUrl(personalInfo.getGithubUrl());
+        personalInfoDto.setLinkedinUrl(personalInfo.getLinkedinUrl());
 
         return personalInfoDto;
     }
