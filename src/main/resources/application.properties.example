@@ -1,12 +1,12 @@
-spring.application.name=my_porfolio_backend
-spring.datasource.url=jdbc:postgresql://ep-orange-frog-b6glewhm-pooler.c-2.sa-east-1.aws.neon.tech/portfolio?sslmode=require&channel_binding=require
-spring.datasource.username=neondb_owner
-spring.datasource.password=npg_B9WwuP8DKZRc
+spring.application.name=
+spring.datasource.url=
+spring.datasource.username=
+spring.datasource.password=
 
 spring.datasource.hikari.maximum-pool-size=10
 spring.datasource.hikari.connection-timeout=20000
 
 spring.sql.init.mode=always
-file.upload.dir=src/main/resources/static/img/projects
+file.upload.dir=
 
 spring.threads.virtual.enabled=true
